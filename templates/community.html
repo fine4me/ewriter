@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% block title %}LogIn{% endblock %}
+
+{% block content %}
+
+<div class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <!-- Community Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Poetic Community</h2>
+            <p class="text-gray-600">Connect with fellow poets and share your creative journey</p>
+        </div>
+
+        <!-- Featured Members Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            <!-- Member Card 1 -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="card-body p-6">
+                    <!-- Member Header -->
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                            <span class="text-2xl text-indigo-600 font-bold">SR</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Sarah Rivers</h3>
+                            <p class="text-sm text-gray-500">Joined 2024 • Featured Poet</p>
+                            <div class="flex gap-2 mt-2">
+                                <span class="badge badge-primary">Nature</span>
+                                <span class="badge badge-ghost">Haiku</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Latest Work -->
+                    <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                        <p class="text-gray-600 italic">
+                            "Morning dew sparkles,<br>
+                            Cherry blossoms dance in wind—<br>
+                            Spring whispers hello"
+                        </p>
+                        <div class="text-sm text-gray-500 mt-2">Posted 2 days ago</div>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">127</div>
+                            <div class="text-sm text-gray-500">Poems</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">1.2k</div>
+                            <div class="text-sm text-gray-500">Followers</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">89</div>
+                            <div class="text-sm text-gray-500">Awards</div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex gap-2">
+                        <button class="btn btn-primary flex-1 bg-indigo-600 hover:bg-indigo-700 border-none">Follow</button>
+                        <button class="btn btn-outline btn-primary flex-1">View Profile</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member Card 2 -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="card-body p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                            <span class="text-2xl text-purple-600 font-bold">AM</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Alex Martinez</h3>
+                            <p class="text-sm text-gray-500">Joined 2024 • Rising Star</p>
+                            <div class="flex gap-2 mt-2">
+                                <span class="badge badge-primary">Urban</span>
+                                <span class="badge badge-ghost">Free Verse</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                        <p class="text-gray-600">
+                            "City lights flicker like fallen stars,<br>
+                            Painting shadows on concrete dreams..."
+                        </p>
+                        <div class="text-sm text-gray-500 mt-2">Posted 1 day ago</div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">85</div>
+                            <div class="text-sm text-gray-500">Poems</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">856</div>
+                            <div class="text-sm text-gray-500">Followers</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">42</div>
+                            <div class="text-sm text-gray-500">Awards</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="btn btn-primary flex-1 bg-indigo-600 hover:bg-indigo-700 border-none">Follow</button>
+                        <button class="btn btn-outline btn-primary flex-1">View Profile</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member Card 3 -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="card-body p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                            <span class="text-2xl text-green-600 font-bold">EK</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Emma Kim</h3>
+                            <p class="text-sm text-gray-500">Joined 2024 • Workshop Lead</p>
+                            <div class="flex gap-2 mt-2">
+                                <span class="badge badge-primary">Spiritual</span>
+                                <span class="badge badge-ghost">Sonnets</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                        <p class="text-gray-600">
+                            "Through meditation's quiet grace,<br>
+                            I find the words that time erased..."
+                        </p>
+                        <div class="text-sm text-gray-500 mt-2">Posted 3 days ago</div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">192</div>
+                            <div class="text-sm text-gray-500">Poems</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">2.1k</div>
+                            <div class="text-sm text-gray-500">Followers</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-indigo-600">156</div>
+                            <div class="text-sm text-gray-500">Awards</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="btn btn-primary flex-1 bg-indigo-600 hover:bg-indigo-700 border-none">Follow</button>
+                        <button class="btn btn-outline btn-primary flex-1">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Highlights -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- Active Discussions -->
+            <div class="card bg-white shadow-lg p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Active Discussions</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <div>
+                            <p class="font-medium text-gray-800">Modern Poetry Techniques</p>
+                            <p class="text-sm text-gray-500">32 poets discussing</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <div>
+                            <p class="font-medium text-gray-800">Weekly Writing Prompts</p>
+                            <p class="text-sm text-gray-500">85 participants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Awards -->
+            <div class="card bg-white shadow-lg p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Recent Achievements</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <span class="text-2xl">🏆</span>
+                        <div>
+                            <p class="font-medium text-gray-800">Monthly Masters Award</p>
+                            <p class="text-sm text-gray-500">Awarded to Sarah Rivers</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-2xl">⭐</span>
+                        <div>
+                            <p class="font-medium text-gray-800">Rising Star Recognition</p>
+                            <p class="text-sm text-gray-500">Awarded to Alex Martinez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Join Community CTA -->
+        <div class="text-center">
+            <button class="btn btn-lg btn-primary bg-indigo-600 hover:bg-indigo-700 border-none">
+                Join Our Community
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}

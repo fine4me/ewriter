@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% block title %}LogIn{% endblock %}
+
+{% block content %}
+<div class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Events</h2>
+            <p class="text-gray-600">Join our upcoming poetry competitions and celebrations</p>
+        </div>
+
+        <!-- Event Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Event Card 1 -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="card-body p-6">
+                    <!-- Event Status Badge -->
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="badge badge-success">Registrations Open</div>
+                        <div class="text-sm text-gray-500">Dec 25, 2024</div>
+                    </div>
+
+                    <!-- Event Title & Description -->
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Winter Poetry Slam</h3>
+                    <p class="text-gray-600 mb-4">Express your creative vision through spoken word and performance poetry.</p>
+
+                    <!-- Prize Section -->
+                    <div class="bg-indigo-50 rounded-lg p-4 mb-4">
+                        <h4 class="font-semibold text-indigo-600 mb-2">Prizes</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="text-yellow-500 mr-2">🏆</span>
+                                1st Place: $500
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">🥈</span>
+                                2nd Place: $300
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-orange-600 mr-2">🥉</span>
+                                3rd Place: $200
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Host Information -->
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                            <span class="text-indigo-600 font-bold">LC</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-800">Literary Council</p>
+                            <p class="text-xs text-gray-500">Event Host</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Details -->
+                    <div class="space-y-2 text-sm text-gray-600 mb-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Grand Auditorium, Arts Center</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>7:00 PM - 10:00 PM</span>
+                        </div>
+                    </div>
+
+                    <!-- Register Button -->
+                    <button class="btn btn-primary w-full bg-indigo-600 hover:bg-indigo-700 text-white border-none">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="card-body p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="badge badge-warning">Limited Seats</div>
+                        <div class="text-sm text-gray-500">Jan 15, 2025</div>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Haiku Competition</h3>
+                    <p class="text-gray-600 mb-4">Master the art of Japanese poetry in this special competition.</p>
+
+                    <div class="bg-indigo-50 rounded-lg p-4 mb-4">
+                        <h4 class="font-semibold text-indigo-600 mb-2">Prizes</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="text-yellow-500 mr-2">🏆</span>
+                                Winner: $300 + Publication
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-purple-500 mr-2">📚</span>
+                                All Finalists: Poetry Collection
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                            <span class="text-indigo-600 font-bold">JP</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-800">Japan Poetry Society</p>
+                            <p class="text-xs text-gray-500">Event Host</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm text-gray-600 mb-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Virtual Event</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>2:00 PM - 4:00 PM</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary w-full bg-indigo-600 hover:bg-indigo-700 text-white border-none">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="card-body p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="badge badge-secondary">Coming Soon</div>
+                        <div class="text-sm text-gray-500">Feb 1, 2025</div>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Sonnets & Spirits</h3>
+                    <p class="text-gray-600 mb-4">An evening of classical poetry reading and networking.</p>
+
+                    <div class="bg-indigo-50 rounded-lg p-4 mb-4">
+                        <h4 class="font-semibold text-indigo-600 mb-2">Special Features</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="text-red-500 mr-2">🎭</span>
+                                Live Performances
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-2">🤝</span>
+                                Networking Session
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                            <span class="text-indigo-600 font-bold">PA</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-800">Poetry Alliance</p>
+                            <p class="text-xs text-gray-500">Event Host</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm text-gray-600 mb-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>The Poetry Lounge</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>6:00 PM - 9:00 PM</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary w-full bg-indigo-600 hover:bg-indigo-700 text-white border-none">
+                        Notify Me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

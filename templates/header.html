@@ -1,0 +1,59 @@
+ <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold text-indigo-600">E writers</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="{{ url_for('home') }}" class="text-gray-600 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="{{ url_for('about') }}" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a>
+                    <a href="{{ url_for('event') }}" class="text-gray-600 hover:text-indigo-600 transition-colors">Events</a>
+                    <a href="{{ url_for('community') }}" class="text-gray-600 hover:text-indigo-600 transition-colors">Community</a>
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-indigo-600 transition-colors">Resources ▾</button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Writing Tips</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Workshops</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Publication</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="{{ url_for('login') }}" class="text-indigo-600 hover:text-indigo-700 transition-colors">Login</a>
+                    <a href="{{ url_for('signup') }}" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors">Sign Up</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md hover:bg-gray-100">
+                        <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden py-4">
+                <a href="{{ url_for('home') }}" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50">Home</a>
+                <a href="{{ url_for('about') }}" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50">About</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50">Events</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50">Community</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50">Resources</a>
+                <div class="border-t border-gray-200 mt-4 pt-4">
+                    <a href="{{ url_for('login') }}" class="block py-2 px-4 text-indigo-600">Login</a>
+                    <a href="{{ url_for('signup') }}" class="block py-2 px-4 bg-indigo-600 text-white mt-2 rounded-lg text-center">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>

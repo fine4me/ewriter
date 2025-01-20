@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %}Abbout Us{% endblock %}
+
+
+{% block content %}
+<div class="bg-gray-50">
+    <div class="hero min-h-screen bg-gradient-to-br from-violet-50 to-indigo-50">
+        <div class="hero-content text-center">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl font-bold text-gray-800 mb-8">Welcome to E writers</h1>
+                <p class="text-xl text-gray-600 mb-6">Where words dance and emotions flow freely</p>
+                <p class="text-lg text-gray-600 mb-8">Join our vibrant community of poets, dreamers, and creative souls</p>
+                <button class="btn btn-primary bg-indigo-600 hover:bg-indigo-700 border-none">Join Our Community</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Statement Section -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
+            <p class="text-lg text-gray-600">
+                We're building a sanctuary for poetry lovers, where every verse finds its voice and every poet finds their home.
+            </p>
+        </div>
+
+        <!-- Feature Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Community Card -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="card-body">
+                    <h3 class="card-title text-2xl text-indigo-600">Nurturing Community</h3>
+                    <p class="text-gray-600">A space where poets of all levels can share, learn, and grow together. We believe in the power of collective creativity.</p>
+                </div>
+            </div>
+
+            <!-- Workshop Card -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="card-body">
+                    <h3 class="card-title text-2xl text-indigo-600">Creative Workshops</h3>
+                    <p class="text-gray-600">Regular workshops led by experienced poets, helping you refine your craft and discover new forms of expression.</p>
+                </div>
+            </div>
+
+            <!-- Events Card -->
+            <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="card-body">
+                    <h3 class="card-title text-2xl text-indigo-600">Poetry Events</h3>
+                    <p class="text-gray-600">From open mics to poetry slams, we create platforms for voices to be heard and stories to be shared.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What We Offer Section -->
+    <div class="bg-indigo-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What We Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Mentorship Card -->
+                <div class="card bg-white shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title text-xl text-indigo-600">Mentorship Programs</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>One-on-one guidance from experienced poets</li>
+                            <li>Personalized feedback on your work</li>
+                            <li>Regular check-ins and progress tracking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Publication Card -->
+                <div class="card bg-white shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title text-xl text-indigo-600">Publication Opportunities</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>Quarterly digital anthology</li>
+                            <li>Featured poet spotlights</li>
+                            <li>Collaboration opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Us Section -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Join Our Growing Family</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Whether you're a seasoned poet or just beginning your journey with words, there's a place for you here.
+            </p>
+            <div class="space-x-4">
+                <a href="{{ url_for('signup') }}" class="btn btn-primary bg-indigo-600 hover:bg-indigo-700 border-none">Become a Member</a>
+                <button class="btn btn-outline border-indigo-600 text-indigo-600 hover:bg-indigo-600">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
